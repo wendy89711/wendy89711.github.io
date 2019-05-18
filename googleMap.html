@@ -1,11 +1,44 @@
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/earlyaccess/cwtexyen.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/cwtexfangsong.css">
+  <style >
+    label{
+      color: darkgreen;
+      font-size: 16px;
+    }
+    input{
+      color: darkgreen;
+      font-size: 16px;
+    }
+    button{
+      color: darkgreen;
+      font-size: 16px;
+    }
+  </style>
+  <head>
+    <div>
+      <title>王文の摯愛</title>
+      <h1 style="color: deeppink; font-size: 35px; font-family: cwtexyen, serif;" align="center">蠟筆小新</h1>
+    </div>
     <style type="text/css">
       html, body { height: 100%; margin: 0; padding: 0; }
       #map { height: 100%; }
     </style>
   </head>
-  <body>
+  <body bgcolor="aliceblue" text="saddlebrown" style="font-family: Noto Sans TC; font-size: 20px;" link="blueviolet" vlink="darkslateblue">
+    <div class="top">
+      <table border="0" width="100%" height="96" bgcolor="lightpink">
+        <tr>
+          <td align="center"><a href="index.html">首頁</a></td>
+          <td align="center"><a href="role.html">角色介紹</a></td>
+          <td align="center"><a href="movie.html">劇場版</a></td>
+          <td align="center"><a href="more.html">更多</a></td>
+          <td align="center"><a href="googleMap.html">GOOGLE MAP</a></td>
+        </tr>
+      </table><br>
+    </div>
     <div id="map"></div>
     <script type="text/javascript">
 
@@ -15,6 +48,13 @@
         center: {lat: 25.0391796, lng: 121.4451441},
         zoom: 18
       });
+      var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title:'炸雞好ㄔ'
+  });
+
+  marker.setMap(map);
     }
 
     </script>
